@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style type="text/css">
+    .list {
+      border: 1px solid;
+      width: 70%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .list .left
+    , .list .right {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    /* .title .right {
+      border: 1px solid;
+    } */
+
+    .title
+    , .order {
+      border: 1px solid;
+    }
+
+    .order .inner1
+    , .order .inner2 {
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+    }    
+
+    .order .inner1 {
+      width: 66.6666%;
+      text-align: left;
+    }
+
+    .order .inner2 {
+      width: 33.3333%;
+      text-align: right;
+    }
+
+    .order .btn-area {
+      overflow: hidden;
+      width: 50%;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+    }  
+
+    .btn-area .inner3{
+      float: left;
+    }
+    
+    .btn-area .inner4{
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="list">
+    <div class="left">
+      사진
+    </div>
+
+    <div class="right">
+      <div class="title">
+        <div>제목 : 패딩 바텀 50px;</div>
+        <div>내용 : qq</div>
+      <div class="order">
+        <div class="price">
+          <div class="inner1">가격</div>
+          <div class="inner2">10000원</div>
+        </div>
+        <div class="btn-area">
+          <button type="button" class="inner3">장바구니</button>
+          <button type="button" class="inner4">장바구니</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
