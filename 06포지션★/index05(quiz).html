@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style type="text/css">
+    * {margin: 0; padding: 0;}
+    ul, li {list-style: none;}
+
+    body {
+      background-image: url("img/bg.png");
+    }
+
+    header .logo {
+      text-align: center;
+      margin: 20px 0 ;
+    }
+
+    header .menu {
+      background-color: black;
+      text-align: center;
+    }
+
+    header .menu li {
+      display: inline-block;
+      padding: 20px;
+    }
+
+    .menu :hover{
+      background-color: #777777;
+    }
+    
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: large;
+    }
+
+    article {
+      background-color: white;
+    }
+
+    article .slider {
+      width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 70px 0;
+    }
+
+    article .slider li {
+      float: left;
+      width: 250px;
+      text-align: center;
+    }
+
+    section {
+      width: 700px; 
+      margin: 0 auto; 
+      position: relative;
+      } /* 이미지 사이즈에 맞춤 */
+
+    section .left {
+      position: absolute; 
+      left: -215px; 
+      top: 100px;
+      }
+
+    section .right {
+      position: absolute; 
+      right: -215px; 
+      top: 100px;
+      }
+    
+    section .left img
+    , section .right img {
+        display: block;
+    }
+
+    /* body기준 */
+    .top {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 50px;
+      background-color: tomato;
+      text-align: center;
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="logo"/>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+    <ul class="slider">
+      <li>
+        <img src="img/item01.png" alt="iPhone">
+        <p>iPhone</p>
+      </li>
+      <li>
+        <img src="img/item02.png" alt="iPod">
+        <p>iPod</p>
+      </li>
+      <li>
+        <img src="img/item03.png" alt="iPad">
+        <p>iPad</p>
+      </li>
+      <li>
+        <img src="img/item04.png" alt="iMac">
+        <p>iMac</p>
+      </li>
+    </ul>
+  </article>
+
+  <section>
+    <div class="content">
+      <img src="img/ipad.jpg" alt="main">
+    </div>
+
+    <aside class="left">
+      <li>
+        <ul><img src="img/side01.png" alt="side1"></ul>
+        <ul></ul><img src="img/side02.png" alt="side2"></ul>
+      </li>
+    </aside>
+
+    <aside class="right">
+      <li>
+        <ul><img src="img/side03.png" alt="side3"></ul>
+        <ul><img src="img/side04.png" alt="side4"></ul>
+      </li>
+    </aside>
+  </section>
+
+  <div class="top"><a href="#">top</a></div>
+  
+</body>
+</html>
