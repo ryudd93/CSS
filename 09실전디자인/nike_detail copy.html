@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 부트스트랩 참조파일 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+  <script src="js/bootstrap.min.js"></script>
+
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style type="text/css">
+    section {
+      overflow: hidden;
+    }
+
+    .detail, .user {overflow: hidden;}
+
+    .detail-img {
+      float: left;
+    }
+    .detail-name {
+      display: block;
+      font-size: x-large;
+    }
+    .detail-content {
+      padding: 5px;
+      margin: 5px;
+    }
+    .detail-price {
+      display: block;
+      font-size: x-large;
+    }
+    .detail-delivery span {
+      display: block;
+      color: #777;
+    }
+    .detail-total {
+      overflow: hidden;
+      display: block;
+      font-size: x-large;
+      margin-top: 100px;
+    }
+    .detail-total .left {
+      font-size: medium;
+      display: block;
+      float: left;
+    }
+    .detail-total .right {
+      display: block;
+      float: right;
+    }
+    .detail-button {
+      display: block;
+    }
+    .detail-button button{
+      width: 50%;
+      height: 50px;
+      font-size: large;
+    }
+
+    .user {
+      border: 1px solid #777;
+    }
+    .user .left {
+      float: left;
+    }
+    .user .right {
+      float: right;
+    }
+    
+
+
+  </style>
+</head>
+<body>
+  
+  <header class="my-header">
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span
+                        class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- 메뉴작성부분 -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+                <!-- 우측 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" action="#">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">
+                          검색
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>상세보기</h2>
+      <hr/>
+      <div class="row"></div>
+        <div class="detail">
+          <div class="col-xs-12 col-sm-6 detail-img">
+            <img src="img/detail.jpg" alt="detail">
+          </div>
+          <div class="col-xs-12 col-sm-6 content">
+            <div class="detail-name">
+              <span><strong>[게릴라특가] 30일체험가능! 벨라페이스 3컬러 LED마스크 눈마사지 겸용/4단계 시간조절/피부홈케어 +사은품까지!</strong></span>
+            </div>
+            <hr/>
+            <div class="detail-price">
+              <span><strong>135,000원</strong></span>
+            </div>
+            <hr/>
+            <div class="detail-delivery">
+              <span>무료배송</span>
+              <span>상품별배송 ㅣ 택배배송 ㅣ당일출고, 12시 이전 결제 건까지 해당 (주말, 공휴일 제외)</span>
+            </div>
+            <div class="detail-total">
+              <li class="left col-md-3"><b>총 상품금액</b></li>
+              <li class="right col-md-3"><strong>0원</strong></li>
+            </div>
+            <div class="detail-button">
+              <button type="button" class="right col-md-3 btn btn-default">장바구니</button>
+              <button type="button" class="left col-md-3 btn btn-primary">구매하기</button>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div>
+          <div class="user">
+            <div class="left">
+              <img src="img/profile.png" alt="profile">
+            </div>
+            <div class="right">
+              <textarea style="width: 75%;"></textarea>
+              <input placeholder="이름"/>
+              <input placeholder="비밀번호"/>
+            </div>
+            <div>
+              <button type="button" class="btn btn-info">등록하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="footer-copyright">
+            <a href="#"><img src="img/logo.svg" width="20"></a>
+            Coding404 | 대표자 : 홍길동 | E-MAIL : kkk123@gmail.com<br/>
+            개인정보보호책임자 : 홍길동 | KG-ITbank에서 오프라인 강의를 진행합니다<br/>
+            주소 : 서울시 강남구<br/>
+            <address>Bootstrap. ALL RIGHTS RESERVED</address>              
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <ul class="footer-menu">
+            <li><a href="#">유용한 정보</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">개인정보 취급방침</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
